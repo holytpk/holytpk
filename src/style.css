@@ -1,102 +1,137 @@
-BODY {
-  background: #282931;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Varela Round', sans-serif;
+/***********************
+ *  Variables
+ **********************/
+/***********************
+ *  Project Main Styles
+ **********************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #282828; }
+
+.slider-pages {
+  overflow: hidden;
+  position: relative;
+    zoom: 59%;
+width: 94%;
+    left: 3%;
+  height: 100vh; }
+
+.slider-page {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  transition: transform 1350ms; }
+
+.slider-page--skew {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 140%;
   height: 100%;
-}
+  background: #282828;
+  transform: skewX(-18deg); }
 
-h1 {
-  line-height: 72px;
-  margin: 24px 0;
-  color:white;
-}
+.slider-page--left {
+  left: 0;
+  transform: translateX(-32.5vh) translateY(100%) translateZ(0); }
+  .slider-page--left .slider-page--skew {
+    left: -40%; }
+  .slider-page--left .slider-page__content {
+    padding: auto 30% auto 30%;
+    transform-origin: 100% 0; }
 
-h3{
-   color: #fc3565;
-  line-height: 24px;
-    margin: 24px 0;
-}
+.slider-page--right {
+  left: 50%;
+  transform: translateX(32.5vh) translateY(-100%) translateZ(0); }
+  .slider-page--right .slider-page--skew {
+    right: -40%; }
+  .slider-page--right .slider-page__content {
+    padding: auto 30% auto 30%;
+    transform-origin: 0 100%; }
 
-h6{
-  line-height:24px;
-}
+.slider-page__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 30% 0 30%;
+  color: #e2e2e2;
+  background-size: cover;
+  transform: skewX(18deg);
+  transition: transform 1350ms; }
 
-h6 span{
-  color:white;
-  line-height:12px;
+.slider-page__title {
+  margin-bottom: 1em;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase; }
+#prev {
+  position:absolute;
+  z-index: 1;
+  top: 73%;
+  left: 3%;
 }
-
-
-p {
-  line-height: 24px;
-  margin: 24px 0;
-  color:#bbbbc4;
+#next {
+  position:absolute; 
+  z-index: 1;
+  top: 73%;
+  left: 10%;
 }
+.slider-page__title--big {
+  font-size: 1.2em; }
 
-a {
-  color: #bbbbc4;
-  text-decoration: none;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-  cursor:pointer;
-  border-bottom:1px groove #fc3565;
-}
+.slider-page__description {
+  font-size: 1em;
+  text-align: center; }
 
-a:hover {
-  color: #fc3565;
-}
+.slider-page__link {
+  color: #80a1c1; }
+  .slider-page__link:hover, .slider-page__link:focus {
+    color: #6386a9;
+    text-decoration: none; }
 
-.columns{
-  background:rgba(47, 48, 58, 0.38);
-}
+/***********************
+ *  Project JS Styles
+ **********************/
+.js-scrolling__page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
-.columns:hover {
-    background: #2e2f35;
-}
+.js-scrolling--active .slider-page {
+  transform: translateX(0) translateY(0) translateZ(0); }
 
-.teaser{
-  padding:10px;
-}
-.featured{
-    background: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
-    background-repeat: no-repeat;
-    background-position: -32px -202px;
-    height: 250px;
-    background-
-}
+.js-scrolling--inactive .slider-page__content {
+  transform: skewX(18deg) scale(0.9); }
 
-.iTwo{
-      background: url(https://images.unsplash.com/photo-1472437774355-71ab6752b434?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb);
-}
+.js-scrolling__page-1 .slider-page--left .slider-page__content {
+  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687769359183380537/ram-of-re-zero-starting-life-in-another-world-wallpaper-3440x1440-2148_15.png"); }
+.js-scrolling__page-1 .slider-page--right .slider-page__content {
+  background-color: #282828; }
 
-.iThree{
-  background:url('https://images.unsplash.com/photo-1445888985293-8e1b904061c4?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');}
+.js-scrolling__page-2 .slider-page--left .slider-page__content {
+  background-color: #e2e2e2; }
+.js-scrolling__page-2 .slider-page--left .slider-page__title,
+.js-scrolling__page-2 .slider-page--left .slider-page__description {
+  color: #282828; }
+.js-scrolling__page-2 .slider-page--right .slider-page__content {
+  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687766774950789160/9ibz1cnnwdp31.png"); }
 
-.iFour{
-  background:url('https://images.unsplash.com/photo-1472825013745-b34ee3e9d09b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-}
-
-.iFive{
-  background:url('https://images.unsplash.com/photo-1466786784937-3e682c802b14?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1875&q=80&cs=tinysrgb');
-}
-
-.iSix{
-  background:url('https://images.unsplash.com/photo-1458791682441-c0fae0292e70?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb');
-}
-
-.iSeven{
-  background:url('https://images.unsplash.com/photo-1476097257289-262c96e8a0f8?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-}
-
-.img{
-    background-repeat: no-repeat;
-    height: 250px;
-    background-size: cover;
-}
-
-.row{
-  margin-bottom:1.5rem;
-}
+.js-scrolling__page-3 .slider-page--left .slider-page__content {
+  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687773688782913563/9ibz1cnnwdp31.png"); }
+.js-scrolling__page-3 .slider-page--right .slider-page__content {
+  background-color: #282828; }
