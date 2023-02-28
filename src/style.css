@@ -150,3 +150,7 @@ width: 94%;
   background-image: url("https://xyoss.g.com.cn/xy-production/cms3.0/2021/1013/20211013141327-8739-54536.jpg"); }
 .js-scrolling__page-3 .slider-page--right .slider-page__content {
   background-color: #282828; }
+  
+@media only screen and (max-width: 640px){
+	
+} 
