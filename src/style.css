@@ -107,7 +107,12 @@ width: 94%;
 .container {
   margin-top: 60px;
   background-color: #CCCCFF;
-  background: url("https://www.gamersky.com/showimage/id_gamersky.shtml?https://img1.gamersky.com/upimg/pic/2019/01/27/201901271049094889.jpg") no-repeat fixed center center;
+  background: url("../img/container_background.jpg") no-repeat fixed center center;
+}
+
+#footer p{
+color: white;
+font-family:  sans-serif;
 }
 
 /***********************
