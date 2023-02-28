@@ -13,7 +13,7 @@
 
 body,html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", DFKai-SB;
   background-color: #282828; }
 
 .slider-pages {
@@ -118,7 +118,7 @@ width: 94%;
 
 .footer_bottom{
   color: white;
-  font-family:  sans-serif;	
+  font-family:  DFKai-SB;	
 }
 
 /***********************
