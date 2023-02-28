@@ -99,14 +99,14 @@ width: 94%;
   text-align: center; }
 
 .slider-page__link {
-  color: #FF00D4; }
+  color: #AF33FF; }
   .slider-page__link:hover, .slider-page__link:focus {
-    color: teal;
+    color: AF33FF;
     text-decoration: none; }
 	
 .container {
   margin-top: 60px;
-  background-color: #E57CFF;
+  background-color: #AF33FF;
 }
 
 /***********************
