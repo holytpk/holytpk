@@ -75,7 +75,7 @@ width: 94%;
 
 .slider-page__title {
   margin-bottom: 1em;
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
   text-transform: uppercase; }
 #prev {
@@ -91,16 +91,16 @@ width: 94%;
   left: 10%;
 }
 .slider-page__title--big {
-  font-size: 2em; }
+  font-size: 5em; }
 
 .slider-page__description {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center; }
 
 .slider-page__link {
-  color: #80a1c1; }
+  color: #FF00D4; }
   .slider-page__link:hover, .slider-page__link:focus {
-    color: #6386a9;
+    color: teal;
     text-decoration: none; }
 
 /***********************
