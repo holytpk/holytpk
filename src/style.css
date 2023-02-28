@@ -75,7 +75,7 @@ width: 94%;
 
 .slider-page__title {
   margin-bottom: 1em;
-  font-size: 1em;
+  font-size: 3em;
   text-align: center;
   text-transform: uppercase; }
 #prev {
@@ -91,10 +91,10 @@ width: 94%;
   left: 10%;
 }
 .slider-page__title--big {
-  font-size: 1.2em; }
+  font-size: 2em; }
 
 .slider-page__description {
-  font-size: 1em;
+  font-size: 2em;
   text-align: center; }
 
 .slider-page__link {
