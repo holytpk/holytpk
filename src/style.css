@@ -125,7 +125,7 @@ width: 94%;
   transform: skewX(18deg) scale(0.9); }
 
 .js-scrolling__page-1 .slider-page--left .slider-page__content {
-  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687769359183380537/ram-of-re-zero-starting-life-in-another-world-wallpaper-3440x1440-2148_15.png"); }
+  background-image: url("img/qingshu.jpg"); }
 .js-scrolling__page-1 .slider-page--right .slider-page__content {
   background-color: #282828; }
 
@@ -135,9 +135,9 @@ width: 94%;
 .js-scrolling__page-2 .slider-page--left .slider-page__description {
   color: #282828; }
 .js-scrolling__page-2 .slider-page--right .slider-page__content {
-  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687766774950789160/9ibz1cnnwdp31.png"); }
+  background-image: url("img/xiuwu.jpg"); }
 
 .js-scrolling__page-3 .slider-page--left .slider-page__content {
-  background-image: url("https://cdn.discordapp.com/attachments/584536200052867077/687773688782913563/9ibz1cnnwdp31.png"); }
+  background-image: url("img/kuiyu.jpg"); }
 .js-scrolling__page-3 .slider-page--right .slider-page__content {
   background-color: #282828; }
