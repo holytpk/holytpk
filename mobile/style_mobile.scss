@@ -223,3 +223,11 @@ footer {
   color: $black-50;
   margin-top: -8px;
 }
+
+@media only screen and (max-width: 640px) {
+  body {
+	-webkit-overflow-scrolling: touch;
+	height: auto;
+	overflow: scroll;
+  } 
+}
