@@ -111,6 +111,11 @@ width: 94%;
   background: url("../img/container_background.jpg") no-repeat fixed center center;
 }
 
+.poem {
+  font-size: 3em; 
+  font-family: DFKai-SB;
+}
+
 .footer_bottom{
   color: white;
   font-family:  sans-serif;	
